@@ -10,3 +10,70 @@
     --color-neutrals-light: #8C8C8C;
     --color-neutrals-base: #696969;
 }
+
+body {
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+
+.header > nav {
+    display: flex;
+    margin-top: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px;
+    background-color:transparent;
+    
+    
+}
+
+.header ul {
+    display: flex;
+}
+
+.header ul li {
+    list-style: none;
+    text-decoration: none;
+    font-family: "Alata", sans-serif;
+    
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+}
+
+.banner {
+   background-image: url(/images/desktop/image-hero.jpg);
+   background-repeat: no-repeat;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   height: 656px;
+}
+
+.banner > div {
+    padding: 48px;
+    border: 2px solid #FFFFFF;
+    width: 658px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 160px;
+    color: white;
+}
