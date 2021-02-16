@@ -12,8 +12,7 @@
 }
 
 body {
-    margin-left: 160px;
-    margin-right: 160px;
+    background-color: white;
 }
 
 h1 {
@@ -27,15 +26,14 @@ h1 {
 }
 
 
-.header > nav {
+.header {
     display: flex;
-    margin-top: 16px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0px;
+    padding:  32px 0px 16px 0px;
     background-color:transparent;
-    
+    margin: 0 160px;
     
 }
 
@@ -47,33 +45,203 @@ h1 {
     list-style: none;
     text-decoration: none;
     font-family: "Alata", sans-serif;
-    
+    padding: 16px;
+    border-bottom: 4px solid transparent;
 }
+
+
 
 .header a {
     text-decoration: none;
     color: white;
     padding: 16px;
+    border-bottom: 4px solid transparent;
 }
 
+.header ul li a:hover {
+    border-bottom: 4px solid #FFFFFF;
+    transition: 0.3s ease-in-out;
+}
 .banner {
    background-image: url(/images/desktop/image-hero.jpg);
-   background-repeat: no-repeat;
+   background-size: cover;
    width: 100%;
-   position: fixed;
    top: 0;
    left: 0;
-   z-index: -1;
    height: 656px;
+   margin-top: -116px;
+    z-index: -1;
 }
 
-.banner > div {
+.banner > h1 {
     padding: 48px;
     border: 2px solid #FFFFFF;
+    border-spacing: 16px;
     width: 658px;
+    text-align: left;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 160px;
     color: white;
+}
+
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+
+
+.info {
+   
+    position: relative;
+    height: auto;
+    margin-top: 124px;
+   
+}
+
+.info > img {
+    z-index: -1;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    max-width: 722px;
+    background-color: white;
+    padding: 80px;    
+    float: right;
+    margin-top: -120px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 124px;
+
+}
+
+.text h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+}
+
+
+.text p {
+    font-family: "Josefin Sans",sans-serif;
+    color: var(--color-neutrals-light);
+    font-weight: normal;
+    line-height: 160%;
+    align-self: stretch;
+}
+
+.creations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.creations > h3 {
+    font-family: "josefin Sans", sans-serif;
+    font-size: 48px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+button {
+    background-color: var(--color-neutrals-black);
+    padding:16px;
+    color:white;
+    border-width: none;
+    border-color: black;
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    width: 25%;
+    
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: 256px 256px 256px 256px;
+    grid-gap: 24px;
+    margin-top: 124px;
+}
+
+
+.img  {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.img::before {
+    background-color: white;
+}
+
+.images-grid .img h3 {
+    font-family: "josefin Sans", sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    margin-top: -160px;
+    padding: 32px;
+}
+
+.footer {
+    background-color: black;
+    margin-top: 124px;
+    padding: 100px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    padding: 16px;
+}
+
+.social img {
+    margin-left: 8px;
+    padding: 8px;
+}
+
+.footer ul {
+    display: flex; 
+    margin-left: -32px;
+    margin-top: 32px;
+}
+
+.footer ul li {
+    padding: 16px;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Alata", sans-serif;
+    border-bottom: 4px solid transparent;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    border-bottom: 4px solid transparent;
+}
+
+.footer ul li a:hover {
+    border-bottom: 4px solid #FFFFFF;
+    transition: 0.3s ease-in-out;
 }
